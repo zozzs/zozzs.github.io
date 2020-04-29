@@ -1,1 +1,9 @@
-*{cursor:url(cursor/normal.cur),auto;}a{cursor:url(cursor/pointer.cur),auto;}
+*{
+	cursor:url(cursor/normal.cur),auto;
+}
+a{
+	cursor:url(cursor/pointer.cur),auto;
+}
+/*::selection{
+	cursor:url(cursor/select.cur)
+}*/
