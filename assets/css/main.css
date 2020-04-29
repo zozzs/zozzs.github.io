@@ -135,25 +135,29 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #eaeaea;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		line-height: 1.65;
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-moz-transition: all 0.2s linear;
+		-webkit-transition: all 0.2s linear;
+		-ms-transition: all 0.2s linear;
+		transition: all 0.2s linear;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: white;
+			border-bottom: solid 1px white;
+			-moz-box-shadow: 2px 2px 5px #EEEEEE; /* 老的 Firefox */
+			text-shadow: 2px 2px 5px #EEEEEE;
+			
 		}
 
 	strong, b {
@@ -1325,9 +1329,13 @@ input, select, textarea {
 
 			#header .content p {
 				text-transform: uppercase;
-				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				letter-spacing: 0.15rem;
+				font-size: 1.25rem;
 				line-height: 2;
+			}
+			
+			#header .content b{
+				text-shadow: 2px 2px 2px black;
 			}
 
 		#header nav ul {
@@ -1353,18 +1361,19 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
+					min-width: 11.5rem;
+					height: 3.25rem;
+					line-height: 3.25rem;
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 1rem;
 					border-bottom: 0;
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: white;
+						color: black;
 					}
 
 					#header nav ul li a:active {
@@ -1539,10 +1548,10 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 48rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
-			border-radius: 4px;
+			border-radius: 6px;
 			opacity: 0;
 		}
 
@@ -1653,4 +1662,19 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+		
+		::selection {
+		     background:rgba(195, 195, 195, 0.5); 
+			  text-shadow: 1px 1px 2px black;
+		}
+		
+		::-moz-selection {
+		    background:rgba(195, 195, 195, 0.5); 
+			text-shadow: 1px 1px 2px black;
+		}
+		
+		::-webkit-selection {
+		    background:rgba(195, 195, 195, 0.5); 
+			 text-shadow: 1px 1px 2px black;
 		}
