@@ -8,6 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/cursor.css" />
+		<link rel="stylesheet" href="assets/css/sweetalert.css" />
+		<script src="assets/js/sweetalert.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -25,7 +27,7 @@
 								<p>
 									梯子状态：<b style="color: limegreen;">开启</b> ；
 									剩余流量：<b style="color: limegreen;">22G</b>；
-									到期时间：<b style="color: deepskyblue;">2020.5.14</b>；
+									剩余时间：<b style="color: deepskyblue;">14天</b>；
 								</p>
 							</div>
 						</div>
@@ -143,5 +145,11 @@
 			<script src="assets/js/breakpoints.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/click.js"></script>
+			
+			<script>
+				window.onload = function(){
+					swal("注意：", "由于重置了梯子，之前弄好梯子的各位需要重新按照教程再弄一遍。")
+				}
+			</script>
 	</body>
 </html>
