@@ -12,7 +12,6 @@
             display: block;
 			margin: 0;
             overflow: hidden;
-            cursor: none;
         }
     </style>
 	<script type="text/javascript">
@@ -47,23 +46,7 @@
             	    drops[x] = 1;
             }
             
-            //进入全屏
-            function requestFullScreen() {
-                var de = document.documentElement;
-                if (de.requestFullscreen) {
-                    de.requestFullscreen();
-                } else if (de.mozRequestFullScreen) {
-                    de.mozRequestFullScreen();
-                } else if (de.webkitRequestFullScreen) {
-                    de.webkitRequestFullScreen();
-                }
-            }
             
-            //添加点击监听事件（点击全屏）
-            document.body.addEventListener('click',function(){
-                requestFullScreen(); //调用全屏
-                eleImage.requestPointerLock();    // 锁定鼠标
-            },false);
             
             //绘制下落的文字
             function draw()
