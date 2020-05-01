@@ -36,10 +36,11 @@
 						<nav>
 							<ul>
 								<li><a href="#p1">开始吧~</a></li>
-								<li><a href="#p2">备用方案</a></li>
+								<li><a href="#p2" id="_s_0_">备用方案</a></li>
 								<li><a href="#p3">常见问题</a></li>
-								<li><a href="#p4">BGM</a></li>
+								<li><a href="#p4" style="color:grey">BGM</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
+								<script>window.onload=function (){$("_s_0_").onclick=function(){swal("应官方要求，请不要把这个梯子宣传到别处，也不要和别人说起这个梯子，谢谢")}}</script>
 							</ul>
 						</nav>
 					</header>
@@ -120,7 +121,7 @@
 										<p>等他记载出来后点代理旁边的下拉框，选择一个节点（如果你使用了其他的就使用优云666下的节点）然后连接<br>
 										<i>Tips:节点名字右边那个多少ms的代表延迟，尽量选择延迟低的节点.不过0ms的节点多半是不能用的,不要选哦~</i></p>
 									<h3 style="color: red;">注意：经过我的测试这些节点访问内网速度大多很慢，有的不支持访问内网，在模式那最好选择“仅网页浏览器(跳过中国站点)”</h3>
-									<p style="color: #7ECFF4;">别吐槽这机场速度慢了...免费的，知足吧<br>其实速度还可以，能上谷歌能看推特，不看视频不打游戏的话足够了</p>
+									<p style="color: #7ECFF4;">速度还可以，能上谷歌能看推特，不看视频不打游戏的话足够了</p>
 								</article>
 
 								<article id="p3">
@@ -131,7 +132,7 @@
 								502：这是梯子被检测出来了，梯子断开连接然后刷新就好<br>
 								没网：换个节点，如果不行就再换一个</p>
 								<h2><li>节点列表是空的</li></h2>
-								<p>手动更新订阅即可（方法见<a href="#start">这里的</a>Step3），如果还是没有，检查你的网络有没有连好(当然你能看这个了就不是网络问题)如果还是bug就来找我吧</p>
+								<p>手动更新订阅即可（方法见<a href="#start">这里</a>Step3），如果还是没有，检查你的网络有没有连好(当然你能看这个了就不是网络问题)如果还是bug就来找我吧</p>
 								<h2><li>TCP连接失败</li></h2>
 								<p>换一个节点，直到能用为止。什么？所有节点都没用？...那你来找我吧</p>
 								<p>如果是加载网页连接超时，但是节点能连上，那么换一个节点（这个节点延迟太大，常见于晚高峰）</p>
@@ -141,8 +142,7 @@
 						<!-- p4 -->
 							<article id="p4">
 								<h2 class="major">BGM</h2>
-								<p>BGM:死机之歌</p>
-								<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=29775322&auto=1&height=66"></iframe>
+								<p>BGM: - </p>
 							</article>
 
 					</div>
@@ -163,10 +163,5 @@
 			<script src="https://cdn.jsdelivr.net/gh/zozzs/zozzs.github.io/assets/js/breakpoints.js"></script>
 			<script src="https://cdn.jsdelivr.net/gh/zozzs/zozzs.github.io/assets/js/main.js"></script>
 			<script src="https://cdn.jsdelivr.net/gh/zozzs/zozzs.github.io/assets/js/click.js"></script>
-			<script>
-				window.onload = function(){
-					swal("注意：", "由于重置了梯子，之前弄好梯子的各位需要重新按照教程再弄一遍。")
-				}
-			</script>
 	</body>
 </html>
